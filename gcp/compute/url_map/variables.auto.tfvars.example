@@ -1,0 +1,20 @@
+project            = "test-purpose-to-delete"
+location           = "europe-west1-c"
+name               = "my-sample-url-map"
+description        = "My super URL map description"
+default_service    = "https://www.googleapis.com/compute/v1/projects/test-purpose-to-delete/global/backendServices/k8s-be-31541--690013e2b38368d1"
+rules = [{
+    hosts = ["mysite.com"],
+    path_matcher = "mysite",
+    default_service = "https://www.googleapis.com/compute/v1/projects/test-purpose-to-delete/global/backendServices/k8s-be-31541--690013e2b38368d1"
+    path_rules = [{
+        paths = ["/home"],
+        service = "https://www.googleapis.com/compute/v1/projects/test-purpose-to-delete/global/backendServices/k8s-be-31541--690013e2b38368d1"
+      },
+      { paths = ["/login"],
+        service = "https://www.googleapis.com/compute/v1/projects/test-purpose-to-delete/global/backendServices/k8s-be-31541--690013e2b38368d1"
+      },
+      { paths = ["/static"],
+        service = "https://www.googleapis.com/compute/v1/projects/test-purpose-to-delete/global/backendServices/k8s-be-31541--690013e2b38368d1"
+      }]
+  }]

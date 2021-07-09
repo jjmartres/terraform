@@ -1,0 +1,7 @@
+projectid = "an-3615-noether"
+api_services = [
+    "cloudbilling.googleapis.com",
+    "cloudresourcemanager.googleapis.com",
+    "compute.googleapis.com",
+    "serviceusage.googleapis.com",
+]

@@ -1,0 +1,9 @@
+project               = "arctic-math-252409"
+location              = "europe-west1-c"
+project_description   = "My super brief description"
+name                  = "firewall-rule-01"
+description           = "Simple firewall rule that allow ingress traffic"
+priority              = 20012
+source_tags           = ["terraform"]
+rules                 = [ {  protocol = "TCP", ports = ["22"] }, {  protocol = "TCP", ports = ["80","443"] }]
+network               = "default"

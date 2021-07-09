@@ -1,0 +1,25 @@
+project = "arctic-math-252409"
+location = "europe-west1-c"
+storage_buckets = [ "tests-fileupload-3566966e-6384-5991-92ab-08dd0fb9c0d4"]
+bindings = {
+    "roles/storage.legacyBucketReader" = [
+      "serviceAccount:my-sa@my-project.iam.gserviceaccount.com",
+      "group:my-group@my-org.com",
+      "user:my-user@my-org.com",
+    ]
+    "roles/storage.legacyBucketWriter" = [
+      "serviceAccount:my-sa@my-project.iam.gserviceaccount.com",
+      "group:my-group@my-org.com",
+      "user:my-user@my-org.com",
+    ]
+  }
+  conditional_bindings = [
+    {
+      role = "roles/storage.admin"
+      title = "expires_after_2019_12_31"
+      description = "Expiring at midnight of 2019-12-31"
+      expression = "request.time < timestamp(\"2020-01-01T00:00:00Z\")"
+      members = ["user:my-user@my-org.com"]
+    }
+  ]
+}

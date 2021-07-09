@@ -1,0 +1,12 @@
+project            = "test-purpose-to-delete"
+location           = "europe-west1-c"
+policy_name_prefix = "plop"
+weekly_schedule = [{
+    day = "monday",
+    start_time = "04:00"
+  }]
+max_retention_days = 7
+on_source_disk_delete = "KEEP_AUTO_SNAPSHOTS"
+labels = { key1 = "value1", key2 = "value2" }
+guest_flush = false
+disks_to_attach = [ "plop-001", "plop-002"]

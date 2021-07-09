@@ -1,0 +1,52 @@
+version: ""
+
+formatter: markdown table
+
+header-from: main.tf
+footer-from: ""
+
+sections:
+  show:
+    - header
+    - requirements
+    - providers
+    - inputs
+    - outputs
+
+content: |-
+  {{ .Header }}
+  {{ include "_docs/repo.md" }}
+  {{ .Requirements }}
+  {{ .Providers }}
+  {{ include "_docs/usage.md" }}
+  {{ .Inputs }}
+  {{ .Outputs }}
+  {{ include "_docs/other.md" }}
+
+output:
+  file: README.md
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+    {{ .Content }}
+    <!-- END_TF_DOCS -->
+
+output-values:
+  enabled: false
+  from: ""
+
+sort:
+  enabled: true
+  by: name
+
+settings:
+  anchor: true
+  color: true
+  default: true
+  description: false
+  escape: true
+  html: true
+  indent: 2
+  required: true
+  sensitive: true
+  type: true

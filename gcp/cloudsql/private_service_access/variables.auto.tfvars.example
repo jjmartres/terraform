@@ -1,0 +1,12 @@
+project = "arctic-math-252409"
+location = "europe-west1-c"
+vpc_network = "default"
+name = "example-network"
+address = ""
+prefix_length = "20"
+ip_version = "ipv4"
+labels = {
+  "plop": "test",
+  "env": "dev",
+  "svc": "cloudsql"
+}

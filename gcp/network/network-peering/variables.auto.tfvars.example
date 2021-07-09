@@ -1,0 +1,5 @@
+project = "arctic-math-252409"
+location = "europe-west1-c"
+prefix = "subnet-01"
+local_network = "projects/arctic-math-252409/global/networks/custom-vpc"
+peer_network = "projects/arctic-math-252409/global/networks/default"

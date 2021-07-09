@@ -1,0 +1,3 @@
+project        = "my-project-id"
+notification_name = "My notification"
+notification_group_email = "notification_email@domain.com"

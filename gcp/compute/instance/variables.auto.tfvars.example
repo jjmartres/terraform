@@ -1,0 +1,12 @@
+project               = "arctic-math-252409"
+location              = "europe-west1-c"
+project_description   = "My super brief description"
+instances_count       = 2
+instances_name_prefix = "plop"
+instances_tags        =  [ "infrastructure", "terraform", "test"]
+auto_delete           = true
+image_name            = "ubuntu-1804-lts"
+machine_type          = "n1-standard-4"
+disk_type             = "pd-standard"
+disk_size_gb          = 100
+network               = "default"

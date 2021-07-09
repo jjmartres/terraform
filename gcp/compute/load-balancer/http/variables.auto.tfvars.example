@@ -1,0 +1,4 @@
+project = "test-purpose-to-delete"
+location = "europe-west1-c"
+name = "my-super-load-balancer"
+url_map = ""

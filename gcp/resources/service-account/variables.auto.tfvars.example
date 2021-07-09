@@ -1,0 +1,8 @@
+project_id = "test-purpose-to-delete"
+names = ["plopfirst"]
+project_roles = [
+  "test-purpose-to-delete=>roles/compute.admin",
+  "test-purpose-to-delete=>roles/viewer"
+]
+grant_projectcreator_role = true
+grant_billing_role = true

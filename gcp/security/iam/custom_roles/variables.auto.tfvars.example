@@ -1,0 +1,9 @@
+project = "arctic-math-252409"
+location = "europe-west1-c"
+target_level = "project"
+target_id = "arctic-math-252409"
+role_id = "my_custom_role"
+title = "My Custom Role"
+description = "Custom Role Description"
+permissions = ["iam.roles.list", "iam.roles.create", "iam.roles.delete"]
+members = ["user:user.tests@zorglub.com"]

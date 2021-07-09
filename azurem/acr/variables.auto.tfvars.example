@@ -1,0 +1,6 @@
+location = "fr-central"
+location_short = "frc"
+client_name = "clientName"
+environment="sample"
+resource_group_name="ci"
+sku="standard"

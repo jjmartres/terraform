@@ -1,0 +1,14 @@
+project = "test-purpose-to-delete"
+location = "europe-west1-c"
+name = "my-first-security-rules"
+description = "My super policy rules"
+default_action = "deny(502)"
+rules = [
+  {
+    action = "allow",
+    priority = 1000,
+    description = "My first rules",
+    src_ip_ranges = [
+      "1.1.1.1/32",
+      "2.2.2.2/32"]
+  }]

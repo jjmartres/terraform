@@ -1,0 +1,15 @@
+project               = "test-purpose-to-delete"
+location              = "europe-west1-c"
+bucket                = "arctic-math-252409-ias"
+bucket_prefix         = "instance/state"
+name                  = "my-super-cluster"
+description           = "my-super-description"
+node_pools            = 3
+initial_node_count    = 3
+min_node_count        = 1
+max_node_count        = 3
+machine_type          = "n1-standard-1"
+disk_type             = "pd-standard"
+disk_size_gb          = 100
+network               = "default"
+instances_tags        =  [ "infrastructure", "terraform", "test"]

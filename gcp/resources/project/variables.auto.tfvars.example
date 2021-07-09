@@ -1,0 +1,5 @@
+name = "My super fake project"
+billing_account = ""
+org_id = ""
+default_region = "europe-west1"
+default_zone = "europe-west1-c"

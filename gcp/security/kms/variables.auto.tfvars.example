@@ -1,0 +1,5 @@
+project = "arctic-math-252409"
+location = "europe-west1-c"
+keyring = "sample-keyring"
+keys = [ "foo", "spam"]
+prevent_destroy = false

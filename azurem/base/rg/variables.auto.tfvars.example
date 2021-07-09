@@ -1,0 +1,7 @@
+location = "fr-central"
+name = "my-sample-rg"
+tags = {
+  "env": "test",
+  "role": "resource_group"
+}
+lock_level = "ReadOnly"
